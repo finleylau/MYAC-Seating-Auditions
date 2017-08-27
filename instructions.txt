@@ -25,10 +25,6 @@ Note that violin parts must be separated into either 1 or 2, a value of just "Vi
 ***
 
 After correctly creating and formatting Roster, move "Roster.csv" into the folder that contains the .py files (MYAC Seating Auditions Program by default).
-Make sure that the correct Dropbox location on the PC is updated in folders.py (folders.py can be opened in a text-editing program such as Notepad).
-The line of code to change is :
-		dropbox_location = 'C:\\Users\\finle\\Dropbox\\'
-Be sure to include two backslashes (\\) instead of just one backslash between folder directories, as displayed above.
 
 NOTE: Intermediate folders in the Dropbox do not have to exist at the time of running the program as the program will create them if they do not exist.  For example, the user does not have to create instrument folders within an orchestra folder (Concert Seating Auditions or Violin 1).
 
@@ -50,7 +46,7 @@ For example, if the folder is on the Desktop, the commands would be:
 cd Desktop
 cd MYAC Seating Auditions Program
 
-Finally, type "python seating_auditions.py" and press Enter.
+Finally, type "python seating_auditions.py" and press Enter.  After running the program, the program will ask you to enter the user of the computer.  This is to create the Dropbox folders with names and codes.  If the Dropbox is located at C:\Users\XXXX\Dropbox, then type the username that is in place of XXXX and press Enter.  
 
 -----------------------------------------------------------
 
@@ -61,5 +57,9 @@ The program outputs two files.  The first is a .csv file called "assignedcodes.c
 IMPORTANT: This file should be saved elsewhere because the program deletes any existing files before generating a new one every time it is ran.
 
 The second file is "codes.txt".  This file is a plain text file used to generate the Dropbox folders for each of the codes.  It is a list of all the codes used without any names.  It has no logistical use in terms of administering seating auditions.
+
+The program also creates two sets of folders.  The first set of folders includes folders labeled by orchestra member name, and the second set of folders contains folders labeled by orchestra member code.  The first set of folders should be moved out of the user's Dropbox into wherever the auditions will be stored (example: M Drive) while the second set of folders should be left in the Dropbox for tape distribution.
+
+IMPORTANT: Both sets of folders should be DELETED BEFORE RUNNING THE PROGRAM.  Otherwise, the program may not create the desired folders.
 
 -----------------------------------------------------------
