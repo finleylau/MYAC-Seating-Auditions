@@ -1,14 +1,12 @@
 from helpers import *
 
 # tell program where to save files
-user = input('Enter user name from C:\\Users\\XXXX\\Dropbox\\ (type what is in place of XXXX)): ')
-print()
 print("Working...")
 
 # open csv file called "roster" with last names, first names, orchestra name, and instruments
 csv_path = 'Roster.csv'
 with open(csv_path, 'r') as roster:
-	readRoster(roster, user)
+	readRoster(roster)
 
 # generates codes in folders
 codes = []
@@ -18,7 +16,7 @@ for line in file:
 		codes.append(line.strip())
 
 # make folders
-makeInstrumentFolders(codes, user)
+makeInstrumentFolders(codes)
 
 print()
 print("Success!")

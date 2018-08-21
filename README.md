@@ -20,6 +20,8 @@ Roster must be formatted in a certain way.  It must have the following columns: 
 The first row of Roster must be the column names above, formatted exactly as listed above.
 The first letter of the values in Orchestra and Instrument do NOT need to be capitalized, but the titles MUST have first-letter capitalization.
 
+Values under the Orchestra column must be one of the following (again, not necessarily the same case): "Concert" or "Symphony"
+
 Values under the Instrument column must be one of the following (again, not necessarily the same case):
 Violin 1, Violin 2, Viola, Cello, Bass, Flute, Oboe, Clarinet, Bassoon, Horn, Trumpet, Trombone, Tuba, Percussion
 
@@ -60,7 +62,7 @@ IMPORTANT: This file should be saved elsewhere because the program deletes any e
 
 The second file is "codes.txt".  This file is a plain text file used to generate the Dropbox folders for each of the codes.  It is a list of all the codes used without any names.  It has no logistical use in terms of administering seating auditions.
 
-The program also creates two sets of folders.  The first set of folders includes folders labeled by orchestra member name, and the second set of folders contains folders labeled by orchestra member code.  The first set of folders should be moved out of the user's Dropbox into wherever the auditions will be stored (example: M Drive) while the second set of folders should be left in the Dropbox for tape distribution.
+The program also creates two sets of folders.  The first set of folders includes folders labeled by orchestra member name, and the second set of folders contains folders labeled by orchestra member code.  The folders should be moved to the places to store the files.
 
 IMPORTANT: Both sets of folders should be DELETED BEFORE RUNNING THE PROGRAM.  Otherwise, the program may not create the desired folders.
 
